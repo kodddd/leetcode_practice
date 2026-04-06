@@ -7,7 +7,7 @@ class Solution:
         numSet = sum(nums)
         longestStreak = 0
         for num in numSet:
-            # 找到streak的头
+            # 判断是否是streak的头
             if num - 1 not in numSet:
                 currentNum = num
                 currentStreak = 1
